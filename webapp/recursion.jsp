@@ -16,7 +16,7 @@
      * @editer: Nathan Preuss
      * @version 3/31
      */
-
+	import java.util.*;
     /** **********************************************************************
      * Function to compute the value n! of some input value n.
      * n! may bel defined as n! = 1 * 2 * ... * 2, 1! = 1.
@@ -160,12 +160,10 @@
     {
         if (height == 1) 
         {
-    	    //TODO
-return null;
+    	    return 1;
         }
         
-    	//TODO
-return null;
+    	return Math.pow(brachingFactor, height-1) + nnaryTreeSize(branchingFactor, height - 1);
     }
 
     /** **********************************************************************
