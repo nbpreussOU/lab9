@@ -111,26 +111,22 @@
     
         public Tree(int value)
         {
-    	    //TODO
-return null;
+    	    this.value = value;
         }
     
         public int getValue()
         {
-    	    //TODO
-return null;
+    	   return value;
         }
     
         public ArrayList<Tree> getChildren()
         {
-    	    //TODO
-return null;
+    	    return children;
         }
     
         public void add(Tree child)
         {
-    	    //TODO
-return null;
+    	    children.add(child);
         }
     }
     
