@@ -112,6 +112,7 @@
         public Tree(int value)
         {
     	    this.value = value;
+	    children = new ArrayList<>();
         }
     
         public int getValue()
@@ -176,8 +177,11 @@
      */
     public int treeSum(Tree tree)
     {
-    	//TODO
-return null;
+	for(Tree e: tree.getChildren())
+	{
+		return tree.getValue() +  treeSum(e);	
+	}
+	return tree.getValue();
     }
     
     /** **********************************************************************
